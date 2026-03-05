@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Redirect to WhatsApp
-            const whatsappNumber = "919676175789";
+            const whatsappNumber = "917013715289";
             const message = `*New Registration - BS Marriage Connect*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Community:* ${community}\n\nI'm interested in finding my perfect match!`;
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -133,6 +133,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+
+    // --- Card Click-to-Select (Golden Yellow Highlight) ---
+    const selectableCards = document.querySelectorAll('.selectable-card');
+    selectableCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Find sibling cards in the same grid/container
+            const parent = card.parentElement;
+            parent.querySelectorAll('.selectable-card').forEach(sibling => {
+                sibling.classList.remove('card-selected');
+            });
+            // Toggle selected on clicked card
+            card.classList.add('card-selected');
         });
     });
 

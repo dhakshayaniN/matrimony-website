@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | BS Marriage Connect</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#FF7A18',
+                            button: '#FCEAD9',
+                            dark: '#070000'
+                        },
+                        rose: {
+                            50: '#fefbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#E3A11A',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 pt-24 text-slate-800">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 shadow-lg border-b border-orange-300/30"
+        style="background: #FF7A18;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html#hero"
+                        class="group flex items-center gap-2 text-2xl font-black tracking-tighter">
+                        <div
+                            class="flex items-center justify-center w-11 h-11 rounded-xl overflow-hidden border border-white/30 bg-white/10">
+                            <img src="logo-new.png" alt="BS Marriage Connect Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span id="logo-text" class="text-white transition-colors duration-300 drop-shadow-sm">
+                            BS <span class="text-white/85 font-black">Marriage Connect</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html#hero"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/20 hover:text-white">Home</a>
+                    <a href="index.html#about"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/20 hover:text-white">About</a>
+                    <a href="index.html#services"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/20 hover:text-white">Services</a>
+                    <a href="index.html#features"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/20 hover:text-white">Features</a>
+                    <a href="index.html#contact"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/20 hover:text-white">Contact</a>
+                    <a href="index.html#contact" id="nav-cta"
+                        class="ml-3 px-6 py-2.5 rounded-full font-black text-sm shadow-lg transition-all duration-300 bg-white text-[#FF6B00] hover:bg-orange-50 hover:scale-105 active:scale-95 border border-white/60">Register
+                        Now</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-xl text-white hover:bg-white/20 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu"
+            class="absolute top-full left-0 right-0 shadow-xl overflow-hidden transition-all duration-500 max-h-0 md:hidden border-t border-white/20"
+            style="background: #FF7A18;">
+            <div class="px-4 py-5 space-y-1">
+                <a href="index.html#hero"
+                    class="mobile-nav-link block w-full text-left px-5 py-3 rounded-xl text-white font-semibold hover:bg-white/20 transition-colors">Home</a>
+                <a href="index.html#about"
+                    class="mobile-nav-link block w-full text-left px-5 py-3 rounded-xl text-white font-semibold hover:bg-white/20 transition-colors">About</a>
+                <a href="index.html#services"
+                    class="mobile-nav-link block w-full text-left px-5 py-3 rounded-xl text-white font-semibold hover:bg-white/20 transition-colors">Services</a>
+                <a href="index.html#features"
+                    class="mobile-nav-link block w-full text-left px-5 py-3 rounded-xl text-white font-semibold hover:bg-white/20 transition-colors">Features</a>
+                <a href="index.html#contact"
+                    class="mobile-nav-link block w-full text-left px-5 py-3 rounded-xl text-white font-semibold hover:bg-white/20 transition-colors">Contact</a>
+                <div class="pt-3 pb-1">
+                    <a href="index.html#contact"
+                        class="mobile-nav-link block w-full py-3.5 text-center rounded-xl bg-white text-[#FF6B00] font-black shadow hover:bg-orange-50 active:scale-95 transition-all">Register
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-[40px] shadow-sm border border-slate-100 p-8 sm:p-16">
+            <h2 class="text-3xl font-black text-slate-900 mb-8 flex items-center gap-3">
+                <i data-lucide="file-text" class="text-[#FF7A18]"></i>
+                Terms and Conditions
+            </h2>
+            <div class="prose prose-slate prose-lg max-w-none text-slate-600 space-y-6">
+                <p class="font-bold">Effective Date: March 04, 2026</p>
+                <p>Welcome to BS Marriage Connect. These Terms and Conditions ("Terms") govern your use of our website
+                    and
+                    mobile application (collectively, the "Platform"). By accessing or using our Platform, you agree to
+                    be bound
+                    by these Terms.</p>
+
+                <h3 class="text-xl font-black text-slate-900">1. Eligibility</h3>
+                <p>To register as a member of BS Marriage Connect or use this Platform, you must be legally competent
+                    and of
+                    legal marriageable age as per the laws of India (currently 18 years or above for females and 21
+                    years or
+                    above for males). The Platform is intended solely for personal use by individual members to find
+                    life
+                    partners and is not for commercial purposes.</p>
+
+                <h3 class="text-xl font-black text-slate-900">2. Account Security</h3>
+                <p>You are responsible for maintaining the confidentiality of your login credentials (username and
+                    password)
+                    and for all activities that occur under your account. You agree to provide accurate information and
+                    notify
+                    us immediately of any unauthorized use.</p>
+
+                <h3 class="text-xl font-black text-slate-900">3. Content and Conduct</h3>
+                <p>You are solely responsible for the content (photos, text, information) you post on the Platform. You
+                    agree
+                    not to post any content that is offensive, defamatory, obscene, or violates the rights of others.
+                </p>
+
+                <h3 class="text-xl font-black text-slate-900">4. Privacy</h3>
+                <p>Your privacy is important to us. Please refer to our Privacy Policy to understand how we collect,
+                    use, and
+                    disclose your personal information.</p>
+
+                <h3 class="text-xl font-black text-slate-900">5. Membership and Subscription Fees</h3>
+                <p>Some features require a paid subscription. Fees are non-refundable except as provided in our Refund
+                    Policy.
+                    All payments are processed through secure gateways (e.g., Razorpay).</p>
+
+                <h3 class="text-xl font-black text-slate-900">6. Disclaimer of Warranties</h3>
+                <p>BS Marriage Connect does not guarantee the accuracy of member profiles or the success of any match.
+                    Users
+                    are advised to exercise caution and perform their own due diligence.</p>
+
+                <h3 class="text-xl font-black text-slate-900">7. Contact Information</h3>
+                <p>If you have any questions about these Terms, please contact us at bsmarriageconnect87@gmail.com or
+                    call us
+                    at +91 70137 15289.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"
+        class="text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden relative border-t border-orange-300/20"
+        style="background: #FF7A18;">
+        <!-- Subtle peach glow top-right -->
+        <div
+            class="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[100px] rounded-full -mr-40 -mt-40 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="flex items-center gap-3">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center overflow-hidden">
+                            <img src="logo-new.png" alt="BS Marriage Connect Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-2xl font-black text-white tracking-tighter">BS Marriage Connect</span>
+                    </div>
+                    <p class="text-white/80 text-lg leading-relaxed max-w-sm">Connecting hearts and building beautiful
+                        families
+                        since 2012. We are the most trusted matrimonial platform.</p>
+                    <div class="flex gap-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-btn w-12 h-12 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#FF6B00] hover:-translate-y-1 transition-all"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-btn w-12 h-12 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#FF6B00] hover:-translate-y-1 transition-all"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                            class="social-btn w-12 h-12 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#FF6B00] hover:-translate-y-1 transition-all"><i
+                                data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            class="social-btn w-12 h-12 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#FF6B00] hover:-translate-y-1 transition-all"><i
+                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-8">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-widest mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html#hero" class="text-white/80 hover:text-white transition-colors">Home</a>
+                        </li>
+                        <li><a href="index.html#about" class="text-white/80 hover:text-white transition-colors">About
+                                Us</a></li>
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#features"
+                                class="text-white/80 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="index.html#contact"
+                                class="text-white/80 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 space-y-8">
+                    <h4 class="text-white font-bold text-lg uppercase tracking-widest">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Profile Matching</a></li>
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Profile Verification</a></li>
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Secure Messaging</a></li>
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Relationship Support</a></li>
+                        <li><a href="index.html#services"
+                                class="text-white/80 hover:text-white transition-colors">Premium Plans</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 space-y-8">
+                    <h4 class="text-white font-bold text-lg uppercase tracking-widest">Connect</h4>
+                    <div class="space-y-6">
+                        <a href="tel:+917013715289" class="flex items-start gap-4 group block">
+                            <div
+                                class="p-3 rounded-xl bg-white/20 text-white group-hover:bg-white group-hover:text-[#FF6B00] transition-colors">
+                                <i data-lucide="phone" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-white font-bold group-hover:text-white/90">Call Us</p>
+                                <p class="text-white/80 text-sm group-hover:text-white">+91 70137 15289</p>
+                            </div>
+                        </a>
+                        <a href="mailto:bsmarriageconnect87@gmail.com" class="flex items-start gap-4 group block">
+                            <div
+                                class="p-3 rounded-xl bg-white/20 text-white group-hover:bg-white group-hover:text-[#FF6B00] transition-colors">
+                                <i data-lucide="mail" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-white font-bold group-hover:text-white/90">Email Support</p>
+                                <p class="text-white/80 text-sm group-hover:text-white">bsmarriageconnect87@gmail.com
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/20 flex flex-col justify-center items-center gap-2 text-sm">
+                <div class="flex items-center gap-4 mb-2">
+                    <a href="terms.html" class="text-white/80 hover:text-white transition-colors font-bold">Terms &amp;
+                        Conditions</a>
+                    <span class="text-white/40 font-bold">|</span>
+                    <a href="privacy.html" class="text-white/80 hover:text-white transition-colors font-bold">Privacy
+                        Policy</a>
+                </div>
+                <p class="text-white/80 text-center">© 2026 BS Marriage Connect. All rights reserved.</p>
+                <p class="text-white/70 text-center font-medium">Powered by Bristletech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

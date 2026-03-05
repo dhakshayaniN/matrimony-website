@@ -1,0 +1,52 @@
+[debug] [2026-03-04T11:13:42.913Z] ----------------------------------------------------------------------
+[debug] [2026-03-04T11:13:42.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nagir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-03-04T11:13:42.915Z] CLI Version:   15.8.0
+[debug] [2026-03-04T11:13:42.915Z] Platform:      win32
+[debug] [2026-03-04T11:13:42.915Z] Node Version:  v22.19.0
+[debug] [2026-03-04T11:13:42.915Z] Time:          Wed Mar 04 2026 16:43:42 GMT+0530 (India Standard Time)
+[debug] [2026-03-04T11:13:42.916Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nagir\Downloads\Matrimony website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-03-04T11:14:32.681Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-04T11:14:32.682Z] > authorizing via signed-in user (bsmarriageconnect87@gmail.com)
+[debug] [2026-03-04T11:14:32.684Z] Checked if tokens are valid: true, expires at: 1772626405633
+[debug] [2026-03-04T11:14:32.684Z] Checked if tokens are valid: true, expires at: 1772626405633
+[debug] [2026-03-04T11:14:32.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-03-04T11:14:33.543Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-03-04T11:14:33.543Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-03-04T11:14:36.377Z] Checked if tokens are valid: true, expires at: 1772626405633
+[debug] [2026-03-04T11:14:36.377Z] Checked if tokens are valid: true, expires at: 1772626405633
+[debug] [2026-03-04T11:14:36.377Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bs-marriage-connect [none]
+[debug] [2026-03-04T11:14:36.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bs-marriage-connect 200
+[debug] [2026-03-04T11:14:36.959Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bs-marriage-connect {"projectId":"bs-marriage-connect","projectNumber":"246043615067","displayName":" BS Marriage connect","name":"projects/bs-marriage-connect","resources":{"hostingSite":"bs-marriage-connect"},"state":"ACTIVE","etag":"1_9eead75e-c0df-4416-969e-055c21093105"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Nagir\Downloads\Matrimony website 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=175090113&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
